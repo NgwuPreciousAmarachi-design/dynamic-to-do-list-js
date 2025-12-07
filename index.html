@@ -1,19 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>To-Do List Application</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>To-Do List Application</title>
+  <!-- Link to your CSS file (must be in the same folder or adjust the path) -->
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-    <div id="todo-app">
-        <h1>My To-Do List</h1>
-        <input type="text" id="task-input" placeholder="Enter a new task">
-        <button id="add-task-btn">Add Task</button>
-        <ul id="task-list">
-            <!-- Tasks will be listed here -->
-        </ul>
-    </div>
-    <script src="script.js"></script>
+  <div id="todo-app">
+    <h1>My To-Do List</h1>
+
+    <!-- Input and button IDs must match the ones used in script.js -->
+    <input type="text" id="task-input" placeholder="Enter a new task" />
+    <button id="add-task-btn">Add Task</button>
+
+    <!-- This UL is where tasks will be rendered -->
+    <ul id="task-list"></ul>
+  </div>
+
+  <!-- Make sure script.js is in the same folder as index.html -->
+  <!-- The script tag should be placed just before </body> -->
+  <script src="script.js"></script>
 </body>
 </html>
